@@ -4,8 +4,6 @@ import {fetchApiData} from "./utils/api";
 import { useDispatch, useSelector} from 'react-redux';
 import { getApiConfiguration } from './store/homeSlice';
 
-
-
  function App() {
 
   const dispatch = useDispatch();
