@@ -1,10 +1,9 @@
 import React from 'react';
 import "./styles.scss";
 
-const searchResults = () => {
+export const SearchResults = () => {
   return (
     <div>searchResults</div>
   )
 }
 
-export default searchResults

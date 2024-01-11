@@ -1,10 +1,10 @@
 import React from 'react';
 import "./styles.scss";
 
-const explore = () => {
+export const Explore = () => {
   return (
     <div>explore</div>
   )
 }
 
-export default explore
+

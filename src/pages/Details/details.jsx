@@ -1,10 +1,9 @@
 import React from 'react';
 import "./styles.scss";
 
-const details = () => {
+export const Details = () => {
   return (
     <div>details</div>
   )
 }
 
-export default details
