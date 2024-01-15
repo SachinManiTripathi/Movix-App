@@ -17,9 +17,10 @@ import Footer from './components/Footer/Footer';
  function App() {
   const dispatch = useDispatch();
   const {url} = useSelector((state) => state.home);
+  console.log(url);
   useEffect(()=>{
-    apiTesting();
-  },[ ])
+     apiTesting();
+  },[])
   
   const apiTesting = () => {
     fetchApiData("/movie/popular").then((res)=>{
@@ -29,13 +30,15 @@ import Footer from './components/Footer/Footer';
   }
   return (
    <BrowserRouter>
+   {/* <Header /> */}
    <Routes>
     <Route path="/" element={<Home />}></Route>
     <Route path="/:mediaType/:id" element={<Details />}></Route>
-    <Route path="/search/:query" e1lement={<SearchResults />}></Route>
+    <Route path="/search/:query" element={<SearchResults />}></Route>
     <Route path="/explore/:mediaType" element={<Explore />}></Route>
     <Route path="/*" element={<PageNotFound/>}></Route>
    </Routes>
+   {/* <Footer /> */}
    </BrowserRouter>
   )
 }
